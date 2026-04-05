@@ -18,7 +18,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link href="/" className="text-xl font-bold tracking-tight">
-          <span className="text-indigo-600">elisius</span>.dk
+          <span className="text-indigo-600">elisius</span>
         </Link>
 
         {/* Desktop */}
