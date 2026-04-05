@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const before = [
   "Manuelle processer",
   "Manglende overblik",
@@ -69,11 +71,13 @@ export default function CaseStudy() {
 
           {/* Profile card */}
           <div className="flex flex-col items-center text-center">
-            <div className="h-32 w-32 rounded-2xl bg-gray-200 flex items-center justify-center text-gray-400">
-              <svg className="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-              </svg>
-            </div>
+            <Image
+              src="/victor.png"
+              alt="Victor Elisius Støy"
+              width={128}
+              height={128}
+              className="rounded-2xl object-cover"
+            />
             <h3 className="mt-4 text-lg font-bold text-gray-900">Victor</h3>
             <p className="text-sm text-gray-500">AI Builder & Rådgiver</p>
             <a

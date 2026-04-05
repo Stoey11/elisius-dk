@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
@@ -83,12 +84,13 @@ export default function OmPage() {
         <section className="bg-white py-16">
           <div className="mx-auto max-w-3xl px-6">
             <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-10 items-start">
-              {/* Photo placeholder */}
-              <div className="h-64 w-full max-w-[280px] mx-auto rounded-2xl bg-gray-200 flex items-center justify-center text-gray-400">
-                <svg className="h-20 w-20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={0.8}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-              </div>
+              <Image
+                src="/victor.png"
+                alt="Victor Elisius Støy"
+                width={280}
+                height={280}
+                className="rounded-2xl object-cover mx-auto"
+              />
               <div>
                 <p className="text-lg text-gray-800 leading-relaxed">
                   Victor arbejder med at bygge skræddersyede AI-løsninger og dashboards,
