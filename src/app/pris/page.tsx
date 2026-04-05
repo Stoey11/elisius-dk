@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Pris — Elisius | Fleksibel samarbejdsmodel",
+  description:
+    "Alle projekter er unikke. Vi tilbyder fast projekt eller løbende samarbejde — tilpasset din virksomheds behov og vækst.",
+};
 
 const models = [
   {

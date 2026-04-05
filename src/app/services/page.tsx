@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Services — Elisius | Dashboards, Automatisering & AI-løsninger",
+  description:
+    "Vi bygger skræddersyede dashboards, automatiserer processer og skaber AI-løsninger der giver din virksomhed overblik og bedre beslutninger.",
+};
 
 const services = [
   {

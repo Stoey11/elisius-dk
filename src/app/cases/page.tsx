@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import DashboardMockup from "@/components/DashboardMockup";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Cases — Elisius | Damsgaard Caravan Center Case Study",
+  description:
+    "Se hvordan vi skabte fuldt overblik hos Damsgaard Caravan Center med et skræddersyet dashboard. +18% marketing ROI og -40% tid på rapportering.",
+};
 
 const challenges = [
   "Marketing performance var svær at gennemskue",
