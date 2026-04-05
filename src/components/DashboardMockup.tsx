@@ -140,7 +140,7 @@ function OverblikView() {
         <KPI label="Omsætning" value="1.24M" change="12.5% denne måned" up />
         <KPI label="Besøgende" value="34.2K" change="8.1% denne uge" up />
         <KPI label="Konvertering" value="3.8%" change="0.4% i dag" up />
-        <KPI label="Avg. ordreværdi" value="2.450 kr" change="2.1% denne uge" down={false} up />
+        <KPI label="Avg. ordreværdi" value="2.450 kr" change="2.1% denne uge" up />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="rounded-xl border border-gray-100 bg-white p-4">
@@ -295,7 +295,7 @@ function AutomatiseringView() {
 /*  Main component                                                     */
 /* ------------------------------------------------------------------ */
 
-const views: Record<string, () => JSX.Element> = {
+const views: Record<string, () => React.ReactElement> = {
   overblik: OverblikView,
   marketing: MarketingView,
   salg: SalgView,
